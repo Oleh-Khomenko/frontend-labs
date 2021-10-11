@@ -1,0 +1,10 @@
+.App {
+
+}
+
+.content_wrapper {
+    display: flex;
+    background: #4b3e3a;
+
+    border-top: 2px solid black;
+}

@@ -1,0 +1,44 @@
+.header_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4b3e3e;
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.title p {
+    margin: 0;
+    padding: 0;
+}
+
+.student_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.student_info span {
+    margin: 10px 20px;
+}
+
+.avatar {
+    border-radius: 100%;
+    margin: 10px;
+}
+
+.labs_tabs {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin: 16px 0 32px 0;
+}
