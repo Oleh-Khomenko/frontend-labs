@@ -17,9 +17,9 @@ export default function Lab1() {
         
         <StyledNav to={'/lab1/3'} className={styles.list}>
           Структура документа
-          <a href="#">HTML-код ТАБЛИЦЬ</a>
-          <a href="#">HTML-код ФОРМИ</a>
-          <a href="#">HTML-код ЗОБРАЖЕННЯ</a>
+          <a href="#1">HTML-код ТАБЛИЦЬ</a>
+          <a href="#2">HTML-код ФОРМИ</a>
+          <a href="#3">HTML-код ЗОБРАЖЕННЯ</a>
         </StyledNav>
         
         <StyledNav to={'/lab1/4'}>
@@ -37,6 +37,14 @@ export default function Lab1() {
           <Route path="/lab1/2">
             <div>
               Місце
+            </div>
+          </Route>
+          
+          <Route path="/lab1/3">
+            <div>
+              <p id="1">table</p>
+              <p id="2">form</p>
+              <p id="3">list</p>
             </div>
           </Route>
         </Switch>
