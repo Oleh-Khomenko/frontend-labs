@@ -17,9 +17,9 @@ export default function Lab1() {
         
         <StyledNav to={'/lab1/3'} className={styles.list}>
           Структура документа
-          <a href="">HTML-код ТАБЛИЦЬ</a>
-          <a href="">HTML-код ФОРМИ</a>
-          <a href="">HTML-код ЗОБРАЖЕННЯ</a>
+          <a href="#">HTML-код ТАБЛИЦЬ</a>
+          <a href="#">HTML-код ФОРМИ</a>
+          <a href="#">HTML-код ЗОБРАЖЕННЯ</a>
         </StyledNav>
         
         <StyledNav to={'/lab1/4'}>
