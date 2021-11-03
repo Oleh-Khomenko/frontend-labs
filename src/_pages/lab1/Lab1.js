@@ -2,7 +2,7 @@ import Aside from '../../components/Aside/Aside';
 import StyledNav from '../../components/StyledNav/StyledNav';
 import styles from './Lab1.module.css';
 import Main from '../../components/Main/Main';
-import { Route, Router, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import classNames from 'classnames';
 
 export default function Lab1({ className }) {

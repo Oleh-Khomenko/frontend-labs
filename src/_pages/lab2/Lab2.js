@@ -85,7 +85,7 @@ export default function Lab2() {
           
           <Route path="/lab2/5">
             <p>.class {'{ '} float: [side] {' }'}</p>
-            <img style={{float: 'left'}} src="" alt="<some image>"/>
+            <img style={{float: 'left'}} src="" alt="img"/>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea et fuga laudantium ut!
               Aspernatur
