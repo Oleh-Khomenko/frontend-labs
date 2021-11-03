@@ -1,9 +1,7 @@
 .main {
-  margin: 16px;
-  padding: 16px;
-
   width: 100%;
-  box-sizing: border-box;
+  min-height: 400px;
+  padding: 1rem;
 
   border: 2px solid darkred;
   border-radius: 24px 0 0 24px;

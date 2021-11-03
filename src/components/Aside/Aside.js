@@ -1,9 +1,13 @@
 import styles from './Aside.module.css';
+import classNames from 'classnames';
 
-export default function Aside({children}) {
+export default function Aside({
+  children,
+  className,
+}) {
   return (
-    <aside className={styles.aside}>
+    <div className={classNames(styles.aside, className)}>
       {children}
-    </aside>
+    </div>
   );
 }

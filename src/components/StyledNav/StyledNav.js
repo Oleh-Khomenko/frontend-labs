@@ -12,7 +12,7 @@ export default function StyledNav({
     <NavLink
       to={to}
       className={classNames(styles.tab, className)}
-      activeClassName={classNames(styles.active_nav, activeClassName)}
+      activeClassName={styles.active_nav}
     >
       {children}
     </NavLink>

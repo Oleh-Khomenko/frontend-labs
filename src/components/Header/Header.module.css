@@ -34,11 +34,16 @@
 }
 
 .labs_tabs {
-    max-width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    max-width: 1200px;
+}
 
-    margin: 16px 0 32px 0;
+
+.tab {
+    margin: 1rem;
+    max-width: 150px;
+    text-align: center;
 }

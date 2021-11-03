@@ -21,12 +21,14 @@ export default function Header() {
       <div className={styles.labs_tabs}>
         <StyledNav
           to="/lab1"
+          className={styles.tab}
         >
           Лабораторна робота №1
         </StyledNav>
         
         <StyledNav
           to="/lab2"
+          className={styles.tab}
         >
           Лабораторна робота №2
         </StyledNav>

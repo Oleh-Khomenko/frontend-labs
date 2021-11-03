@@ -1,11 +1,11 @@
 .tab {
-  padding: 24px 16px;
-  margin: 12px;
+  display: block;
+  width: 100%;
   border: 2px solid black;
   border-radius: 24px;
+  word-wrap: break-word;
 
-  min-width: 170px;
-
+  padding: 0.5rem;
   background: #726b56;
   color: white;
 
