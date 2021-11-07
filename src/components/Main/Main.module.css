@@ -1,16 +1,21 @@
 .main {
   width: 100%;
-  min-height: 400px;
+  max-height: 600px;
   padding: 1rem;
 
   border: 2px solid darkred;
   border-radius: 24px 0 0 24px;
 
   overflow-y: scroll;
+  overscroll-behavior: contain;
 }
 
 .main::-webkit-scrollbar {
   width: 6px;
+}
+
+main::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 main::-webkit-scrollbar-thumb {

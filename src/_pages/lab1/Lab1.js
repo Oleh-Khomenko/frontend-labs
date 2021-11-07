@@ -77,11 +77,28 @@ export default function Lab1({ className }) {
           
           <Route path="/lab1/2">
             <div>
+              <p>
+                Тема: СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОГО ГАЛУЗІ.
+                РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, ФОРМАМИ в HTML-ДОКУМЕНТІ.
+                <br/>
+                <br/>
+                Мета: придбати практичні навички роботи з HTML-документом, таблицями,формами, зображеннями, посиланнями.
+                Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
+              </p>
               <a
                 style={{ color: 'blue' }}
+                target="_blank"
                 href="https://kind-goldberg-805e93.netlify.app"
               >
                 https://kind-goldberg-805e93.netlify.app
+              </a>
+              <br/>
+              <a
+                style={{ color: 'blue' }}
+                target="_blank"
+                href="https://github.com/Oleh-Khomenko/frontend-labs"
+              >
+                https://github.com/Oleh-Khomenko/frontend-labs
               </a>
             </div>
           </Route>
@@ -91,12 +108,12 @@ export default function Lab1({ className }) {
               {'<table><tr><th></th></tr></table>'}
               <br/>
             </Route>
-
+            
             <Route path={['/lab1/3', '/lab1/3/2']} exact>
               {'<form><input/><button type="submit"></button></form>'}
               <br/>
             </Route>
-  
+            
             <Route path={['/lab1/3', '/lab1/3/3']} exact>
               {'<img src="" alt=""/>'}
               <br/>
@@ -104,7 +121,56 @@ export default function Lab1({ className }) {
           </Route>
           
           <Route path="/lab1/4">
-            Conclusion
+            <ul>
+              <li>
+                <p>1. Структура HTML-документу</p>
+                <pre>
+                  <code>
+                    html
+                    <br/>  head
+                    <br/>    metadata
+                    <br/>    fonts
+                    <br/>    styles
+                    <br/>  body
+                    <br/>    header
+                    <br/>      img "logo"
+                    <br/>    nav
+                    <br/>      a href=""
+                    <br/>    main
+                    <br/>      div.content
+                    <br/>    aside
+                    <br/>      a href=""
+                    <br/>    footer
+                    <br/>      div.disclaimer
+                    <br/>      div.copyright
+                  </code>
+                </pre>
+              </li>
+              <li>
+                <p>2. Дати визначення тега</p>
+                <p>Тег - це елемент стандартного мови розмітки тексту в Інтернеті — мови HTML. Даними елементами
+                  супроводжується початок і закінчення кожної виділеної частини документа.</p>
+              </li>
+              <li>
+                <p>3. Які теги використовуються при роботі з таблицями</p>
+                <p>table, tr, td, thead, tbody, tfoot, col, colgroup</p>
+              </li>
+              <li>
+                <p>4. Які теги використовуються при роботі з зображеннями</p>
+                <p>img src="URL" alt="альтернативний текст"</p>
+              </li>
+              <li>
+                <p>Які теги використовуються при роботі зі списками</p>
+                <p>ol, ul, li</p>
+              </li>
+              <li>
+                <p>6. Перерахувати засоби опису таблиць в html</p>
+                <p>
+                  nowrap, colspan, rowspan, width, unit, colspec, dp, cellpadding, align, valign, border,
+                  cellspacing
+                </p>
+              </li>
+            </ul>
           </Route>
         </Switch>
       </Main>
