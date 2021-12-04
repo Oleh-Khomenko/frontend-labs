@@ -23,12 +23,12 @@
   background: black;
 }
 
+.aside > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 54rem) {
   .content_wrapper {
     grid-template-columns: 1fr;
-  }
-
-  .aside > *:not(:last-child) {
-    margin-bottom: 1rem;
   }
 }

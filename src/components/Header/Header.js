@@ -32,6 +32,13 @@ export default function Header() {
         >
           Лабораторна робота №2
         </StyledNav>
+  
+        <StyledNav
+          to="/lab3"
+          className={styles.tab}
+        >
+          Лабораторна робота №3
+        </StyledNav>
       </div>
     </header>
   );

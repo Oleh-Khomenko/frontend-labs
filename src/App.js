@@ -1,8 +1,9 @@
 import styles from './App.module.css';
 import Header from "./components/Header/Header";
 import {Redirect, Route, Switch} from 'react-router-dom';
-import Lab1 from './_pages/lab1/Lab1';
-import Lab2 from './_pages/lab2/Lab2';
+import Lab1 from './pages/lab1/Lab1';
+import Lab2 from './pages/lab2/Lab2';
+import Lab3 from './pages/lab3/Lab3';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
             </Route>
             <Route path="/lab2">
               <Lab2/>
+            </Route>
+            <Route path="/lab3">
+              <Lab3/>
             </Route>
             <Route path="*">
               <Redirect to="/lab1">
