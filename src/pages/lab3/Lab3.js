@@ -13,7 +13,6 @@ import KHO_HTML from '../../assets/lab3/khomenko_html.png';
 import POM_CSS from '../../assets/lab3/pomorova_css.png';
 import KHO_CSS from '../../assets/lab3/khomenko_css.png';
 
-
 // styles
 import styles from './Lab3.module.css';
 
@@ -91,6 +90,7 @@ export default function Lab3() {
             <a
               style={{ color: 'blue' }}
               target="_blank"
+              rel="noreferrer"
               href="https://kind-goldberg-805e93.netlify.app"
             >
               https://kind-goldberg-805e93.netlify.app
@@ -99,6 +99,7 @@ export default function Lab3() {
             <a
               style={{ color: 'blue' }}
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/Oleh-Khomenko/frontend-labs"
             >
               https://github.com/Oleh-Khomenko/frontend-labs
