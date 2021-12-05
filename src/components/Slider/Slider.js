@@ -37,7 +37,8 @@ export default function Slider({
       }
       setEventTime(+new Date() + delay * 1000);
     }
-  }, [timer, autoPlay, delay, eventTime, nextImage]);
+    // eslint-disable-next-line
+  }, [timer]);
 
   function zoomIn() {
     setImgSize(imgSize + 20);

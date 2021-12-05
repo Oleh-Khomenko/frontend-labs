@@ -81,7 +81,39 @@ export default function Lab4() {
       <Main>
         <Switch>
           <Route path="/lab4/1">
-
+            <p>
+              Тема: БЛОЧНА ВЕРСТКА HTML-ДОКУМЕНТУ ЗА МАКЕТОМ. ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
+              <br/>
+              <br/>
+              Мета:
+              <ul>
+                <li>
+                  придбати практичні навички роботи верстки сторінок засобами CSS, верстки на основі плаваючих
+                  елементів,
+                  з’ясувати переваги та недоліки типів макетів веб-сторінок
+                </li>
+                <li>
+                  придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
+                </li>
+              </ul>
+            </p>
+            <a
+              style={{ color: 'blue' }}
+              target="_blank"
+              rel="noreferrer"
+              href="https://kind-goldberg-805e93.netlify.app"
+            >
+              https://kind-goldberg-805e93.netlify.app
+            </a>
+            <br/>
+            <a
+              style={{ color: 'blue' }}
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/Oleh-Khomenko/frontend-labs"
+            >
+              https://github.com/Oleh-Khomenko/frontend-labs
+            </a>
           </Route>
           <Route path="/lab4/2">
             <img src={jsCode} alt="js code" width={'100%'}/>
@@ -101,23 +133,29 @@ export default function Lab4() {
               Create array
             </button>
             <div>
-              <p style={{ color: 'red' }}>Мінімальний елемент:</p>
+              <p style={{color: 'red'}}>Мінімальний елемент:</p>
               <p>Непарні індекси: {minArrValue.min}</p>
               <p>Парні індекси: {minArrValue.minPaired}</p>
 
-              <p style={{ color: 'red' }}>Максимальний елемент:</p>
+              <p style={{color: 'red'}}>Максимальний елемент:</p>
               <p>Непарні індекси: {maxArrValue.max}</p>
               <p>Парні індекси: {maxArrValue.maxPaired}</p>
 
-              <p style={{ color: 'red' }}>Початковий масив:</p>
+              <p style={{color: 'red'}}>Початковий масив:</p>
               [{arr.join(',\n')}]
 
-              <p style={{ color: 'red' }}>Відсортований (методом вибору) масив:</p>
+              <p style={{color: 'red'}}>Відсортований (методом вибору) масив:</p>
               [{sortedArr.join(',\n')}]
             </div>
           </Route>
           <Route path="/lab4/4">
             <Slider images={sliderImages}/>
+          </Route>
+          <Route path="/lab4/5">
+            <p>
+              Придбали практичні навички роботи маніпулювання інформаційним вмістом Web-документа засобами мови
+              JavaScript, використання об’єктів,масивів, функцій, подій, обробників подій у сценаріях на мові JavaScript
+            </p>
           </Route>
         </Switch>
       </Main>
