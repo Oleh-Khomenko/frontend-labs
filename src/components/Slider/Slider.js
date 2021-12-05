@@ -17,19 +17,19 @@ export default function Slider({
   const [timer, setTimer] = useState(+new Date());
   const [eventTime, setEventTime] = useState(+new Date() + delay * 1000);
   const [imgSize, setImgSize] = useState(100);
-  
+
   const inputRef = useRef(null);
-  
+
   useEffect(() => {
     const timerDelay = setInterval(() => {
       setTimer(new Date());
     }, 100);
-    
+
     return () => {
       clearInterval(timerDelay);
     };
-  }, []);
-  
+  });
+
   useEffect(() => {
     if (timer > eventTime) {
       if (autoPlay) {
@@ -38,21 +38,21 @@ export default function Slider({
       setEventTime(+new Date() + delay * 1000);
     }
   }, [timer]);
-  
+
   function zoomIn() {
     setImgSize(imgSize + 20);
   }
-  
+
   function zoomOut() {
     if (imgSize > 30) {
       setImgSize(imgSize - 20);
     }
   }
-  
+
   function handleChangeLoop() {
     setLoop(!loop);
   }
-  
+
   function handleChangeDelay() {
     let delay = inputRef.current?.value;
     if (delay < 1) {
@@ -60,11 +60,11 @@ export default function Slider({
     }
     setDelay(delay);
   }
-  
+
   function handleChangeAutoPlay() {
     setAutoPlay(!autoPlay);
   }
-  
+
   function prevImage() {
     if (currentImageIndex === 0) {
       if (loop) {
@@ -76,7 +76,7 @@ export default function Slider({
       setCurrentImageIndex(currentImageIndex - 1);
     }
   }
-  
+
   function nextImage() {
     if (currentImageIndex === images.length - 1) {
       if (loop) {
@@ -88,7 +88,7 @@ export default function Slider({
       setCurrentImageIndex(currentImageIndex + 1);
     }
   }
-  
+
   return (
     <div className={styles.slider_wrapper}>
       <div className={styles.slider}>
