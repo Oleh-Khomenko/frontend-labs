@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useEffect } from "react";
 
 import lightGallery from "lightgallery";
@@ -59,3 +60,4 @@ export default function VideoGallery() {
     </div>
   );
 }
+/* eslint-enable */
