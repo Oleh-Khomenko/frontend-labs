@@ -25,7 +25,7 @@ function App() {
           <Route path="/lab3">
             <Lab3/>
           </Route>
-          <Route path="/lab3">
+          <Route path="/lab4">
             <Lab4/>
           </Route>
           <Route path="*">
