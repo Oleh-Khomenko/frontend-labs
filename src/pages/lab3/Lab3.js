@@ -5,64 +5,92 @@ import { Route, Switch } from 'react-router-dom';
 import Main from '../../components/Main/Main';
 import Aside from '../../components/Aside/Aside';
 import StyledNav from '../../components/StyledNav/StyledNav';
+import Template3 from './problem3/Template3';
 
 // assets
-import LIST from '../../assets/lab2/list.png';
-import ID from '../../assets/lab2/id.png';
-import RET from '../../assets/lab2/retreat.png';
-import FLOAT from '../../assets/lab2/float.png';
-import SELECTORS from '../../assets/lab2/class_tag_selector.png';
-
+import POM_HTML from '../../assets/lab3/pomorova_html.png';
+import KHO_HTML from '../../assets/lab3/khomenko_html.png';
+import POM_CSS from '../../assets/lab3/pomorova_css.png';
+import KHO_CSS from '../../assets/lab3/khomenko_css.png';
 
 // styles
-import styles from './Lab2.module.css';
+import styles from './Lab3.module.css';
 
-export default function Lab2() {
+export default function Lab3() {
   return (
     <div className={styles.content_wrapper}>
       <Aside className={styles.aside}>
-        <StyledNav to={'/lab2/1'}>
-          Тема Мета Місце розташування Лаб1
+        <StyledNav to="/lab3/problem3">
+          Завдання номер 3
         </StyledNav>
-        <StyledNav to={'/lab2/2'}>
-          Списки
+        <StyledNav to={'/lab3/1'}>
+          Тема Мета Місце розташування Лаб3
         </StyledNav>
-        <StyledNav to={'/lab2/3'}>
-          Ідентифікатори
+        <StyledNav to={'/lab3/2'}>
+          Зовнішній вигляд макету
         </StyledNav>
-        <StyledNav to={'/lab2/4'}>
-          Відступи
+        <StyledNav to={'/lab3/3'}>
+          HTML-код макету
         </StyledNav>
-        <StyledNav to={'/lab2/5'}>
-          Плаваючі елементи
+        <StyledNav to={'/lab3/4'}>
+          Розмітка сторінки за допомогою таблиці
         </StyledNav>
-        
-        <StyledNav to={'/lab2/6'} className={styles.list}>
-          Селектори
-          <StyledNav to="/lab2/6/1">Селектори тегу і класу</StyledNav>
-          <StyledNav to="/lab2/6/2">Інші селектори</StyledNav>
-          <StyledNav to="/lab2/6/3">Групування селекторів</StyledNav>
+        <StyledNav to={'/lab3/5'}>
+          Розмітка сторінки за допомогою плаваючих блоків
         </StyledNav>
         
-        <StyledNav to={'/lab2/7'}>
+        <StyledNav to={'/lab3/6'} className={styles.list}>
+          HTML-код сторінки завдання
+          <StyledNav to={'/lab3/6/1'}>
+            Поморова
+          </StyledNav>
+          <StyledNav to={'/lab3/6/2'}>
+            Хоменко
+          </StyledNav>
+        </StyledNav>
+  
+        <StyledNav to={'/lab3/7'} className={styles.list}>
+          CSS-код сторінки завдання
+          <StyledNav to={'/lab3/7/1'}>
+            Поморова
+          </StyledNav>
+          <StyledNav to={'/lab3/7/2'}>
+            Хоменко
+          </StyledNav>
+        </StyledNav>
+  
+        <StyledNav to={'/lab3/8'}>
           Висновки
         </StyledNav>
       </Aside>
+      
+      {/* Routes */}
       <Main>
         <Switch>
-          <Route path="/lab2/1">
+          <Route path="/lab3/problem3">
+            <Template3/>
+          </Route>
+          <Route path="/lab3/1">
             <p>
-              Тема: КАСКАДНІ ТАБЛИЦІ СТИЛІВ. СЕЛЕКТОРИ .ІДЕНТИФІКАТОРИ. СТИЛЬОВЕ ОФОРМЛЕННЯ ТЕКСТОВИХ ЕЛЕМЕНТІВ В
-              HTML-ДОКУМЕНТАХ.
+              Тема: БЛОЧНА ВЕРСТКА HTML-ДОКУМЕНТУ ЗА МАКЕТОМ. ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
               <br/>
               <br/>
-              Мета: придбати практичні навички роботи з селекторами,ідентифікаторами, списками, різноманітними
-              властивостями кольору і фону, зовнішними та внутрішними відступами, плаваючими елементами, оформленням
-              текстових елементів
+              Мета:
+              <ul>
+                <li>
+                  придбати практичні навички роботи верстки сторінок засобами CSS, верстки на основі плаваючих
+                  елементів,
+                  з’ясувати переваги та недоліки типів макетів веб-сторінок
+                </li>
+                <li>
+                  придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
+                </li>
+              </ul>
             </p>
             <a
               style={{ color: 'blue' }}
               target="_blank"
+              rel="noreferrer"
               href="https://kind-goldberg-805e93.netlify.app"
             >
               https://kind-goldberg-805e93.netlify.app
@@ -71,69 +99,44 @@ export default function Lab2() {
             <a
               style={{ color: 'blue' }}
               target="_blank"
+              rel="noreferrer"
               href="https://github.com/Oleh-Khomenko/frontend-labs"
             >
               https://github.com/Oleh-Khomenko/frontend-labs
             </a>
           </Route>
           
-          <Route path="/lab2/2">
-            <ul>
-              <li>
-                Не нумерований список
-              </li>
-            </ul>
-            <ol>
-              <li>
-                Нумерований список
-              </li>
-            </ol>
-            <img src={LIST} alt="list"/>
+          <Route path="/lab3/2">
           </Route>
           
-          <Route path="/lab2/3">
-            <p>
-              #obj_name {`{ `}
-              style_properties
-              {` }`}
-            </p>
-            <img src={ID} alt="id"/>
+          <Route path="/lab3/3">
           </Route>
           
-          <Route path="/lab2/4">
-            <img src={RET} alt="retreat"/>
+          <Route path="/lab3/4">
           </Route>
           
-          <Route path="/lab2/5">
-            <p>.class {'{ '} float: [side] {' }'}</p>
-            <img style={{ float: 'left' }} src="" alt="img"/>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ea et fuga laudantium ut!
-              Aspernatur
-              beatae dolorum et facilis, fuga impedit iusto laborum magni nesciunt nostrum odit quibusdam sed, tempore
-              ut
-              vel veritatis voluptatum! Architecto libero mollitia optio quo vitae!
-            </p>
-            <img src={FLOAT} alt="float"/>
+          <Route path="/lab3/5">
           </Route>
           
-          <Route path={['/lab2/6', '/lab2/6/1', '/lab2/6/2', '/lab2/6/3']}>
-            <Route path={['/lab2/6', '/lab2/6/1']} exact>
-              <p>p {'{ '} style_property {' }'} {'<'}- селектор тегу</p>
-              <p>.class {'{ '} style_property {' }'} {'<'}- селектор класу</p>
-              <img src={SELECTORS} alt="selectors"/>
+          <Route path={['/lab3/6', '/lab3/6/1', '/lab3/6/2']}>
+            <Route path={['/lab3/6', '/lab3/6/1']} exact>
+              <img src={POM_HTML} alt="pomorova html"/>
             </Route>
-            <Route path={['/lab2/6', '/lab2/6/2']} exact>
-              <p>* {'{ '} style_property {' }'} {'<'}- універсальний селектор</p>
-              <p>.class > div {'{ '} style_property {' }'} {'<'}- селектор дочірнього div</p>
-              <p>input[type=button] {'{ '} style_property {' }'} {'<'}- селектор атрибута</p>
+            <Route path={['/lab3/6', '/lab3/6/2']} exact>
+              <img src={KHO_HTML} alt="khomenko html"/>
             </Route>
-            <Route path={['/lab2/6', '/lab2/6/3']} exact>
-              <p>.class1, .class2, tag1, tag2 {'{ '} style_property {' }'} {'<'}- групування селекторів</p>
+          </Route>
+  
+          <Route path={['/lab3/7', '/lab3/7/1', '/lab3/7/2']}>
+            <Route path={['/lab3/7', '/lab3/7/1']} exact>
+              <img src={POM_CSS} alt="pomorova css"/>
+            </Route>
+            <Route path={['/lab3/7', '/lab3/7/2']} exact>
+              <img src={KHO_CSS} alt="khomenko css"/>
             </Route>
           </Route>
           
-          <Route path="/lab2/7">
+          <Route path="/lab3/8">
             <ul>
               <li>
                 <p>1. Для чого використовуються каскадні таблиці стилів</p>

@@ -88,6 +88,7 @@ export default function Lab1({ className }) {
               <a
                 style={{ color: 'blue' }}
                 target="_blank"
+                rel="noreferrer"
                 href="https://kind-goldberg-805e93.netlify.app"
               >
                 https://kind-goldberg-805e93.netlify.app
@@ -96,6 +97,7 @@ export default function Lab1({ className }) {
               <a
                 style={{ color: 'blue' }}
                 target="_blank"
+                rel="noreferrer"
                 href="https://github.com/Oleh-Khomenko/frontend-labs"
               >
                 https://github.com/Oleh-Khomenko/frontend-labs
