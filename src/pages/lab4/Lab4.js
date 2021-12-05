@@ -12,6 +12,8 @@ import selectionSort from '../../helpers/selection-sort';
 
 // assets
 import sliderImages from '../../assets/slider-images';
+import jsCode from '../../assets/lab4/jscode.png';
+import cssCode from '../../assets/lab4/csscode.png';
 
 // styles
 import styles from './Lab4.module.css';
@@ -22,7 +24,7 @@ export default function Lab4() {
   const [sortedArr, setSortedArr] = useState([]);
   const [minArrValue, setMinArrValue] = useState({});
   const [maxArrValue, setMaxArrValue] = useState({});
-  
+
   function handleSetCount(ev) {
     let count = ev.target.value;
     if (count > 5000) {
@@ -33,7 +35,7 @@ export default function Lab4() {
     }
     setCount(count);
   }
-  
+
   function createArray() {
     const temp_arr = [];
     for (let i = 0; i < count; i++) {
@@ -54,7 +56,7 @@ export default function Lab4() {
       },
     );
   }
-  
+
   return (
     <div className={styles.content_wrapper}>
       <Aside className={styles.aside}>
@@ -74,15 +76,16 @@ export default function Lab4() {
           Висновки
         </StyledNav>
       </Aside>
-      
+
       {/* routes */}
       <Main>
         <Switch>
           <Route path="/lab4/1">
-          
+
           </Route>
           <Route path="/lab4/2">
-          
+            <img src={jsCode} alt="js code" width={'100%'}/>
+            <img src={cssCode} alt="css code" width={'100%'}/>
           </Route>
           <Route path="/lab4/3">
             <input
@@ -101,14 +104,14 @@ export default function Lab4() {
               <p style={{ color: 'red' }}>Мінімальний елемент:</p>
               <p>Непарні індекси: {minArrValue.min}</p>
               <p>Парні індекси: {minArrValue.minPaired}</p>
-              
+
               <p style={{ color: 'red' }}>Максимальний елемент:</p>
               <p>Непарні індекси: {maxArrValue.max}</p>
               <p>Парні індекси: {maxArrValue.maxPaired}</p>
-              
+
               <p style={{ color: 'red' }}>Початковий масив:</p>
               [{arr.join(',\n')}]
-              
+
               <p style={{ color: 'red' }}>Відсортований (методом вибору) масив:</p>
               [{sortedArr.join(',\n')}]
             </div>

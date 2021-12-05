@@ -28,7 +28,7 @@ export default function Slider({
     return () => {
       clearInterval(timerDelay);
     };
-  });
+  }, []);
 
   useEffect(() => {
     if (timer > eventTime) {
@@ -37,7 +37,7 @@ export default function Slider({
       }
       setEventTime(+new Date() + delay * 1000);
     }
-  }, [timer]);
+  }, [timer, autoPlay, delay, eventTime, nextImage]);
 
   function zoomIn() {
     setImgSize(imgSize + 20);
