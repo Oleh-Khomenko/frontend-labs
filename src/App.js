@@ -6,6 +6,7 @@ import Lab1 from './pages/lab1/Lab1';
 import Lab2 from './pages/lab2/Lab2';
 import Lab3 from './pages/lab3/Lab3';
 import Lab4 from './pages/lab4/Lab4';
+import Lab5 from "./pages/lab5/Lab5";
 
 // styles
 import styles from './App.module.css';
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/lab4">
             <Lab4/>
+          </Route>
+          <Route path="/lab5">
+            <Lab5/>
           </Route>
           <Route path="*">
             <Redirect to="/lab1">

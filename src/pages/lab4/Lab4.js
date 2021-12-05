@@ -82,15 +82,17 @@ export default function Lab4() {
         <Switch>
           <Route path="/lab4/1">
             <p>
-              Тема: БЛОЧНА ВЕРСТКА HTML-ДОКУМЕНТУ ЗА МАКЕТОМ. ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
+              Тема: ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ.
+              КЛАСИ,ОБ’ЄКТИ, ФУНКЦІЇ, В МОВІ JAVASCRIPT. ПОДІЇ ТА ОБРОБКА ПОДІЙ.
+              ПРОГРАМНА ВЗАЄМОДІЯ З HTML ДОКУМЕНТАМИ НА ОСНОВІ DOM АРІ
               <br/>
               <br/>
               Мета:
               <ul>
                 <li>
-                  придбати практичні навички роботи верстки сторінок засобами CSS, верстки на основі плаваючих
-                  елементів,
-                  з’ясувати переваги та недоліки типів макетів веб-сторінок
+                  придбати практичні навички роботи маніпулювання інформаційним вмістом Web-документа засобами мови
+                  JavaScript, використання об’єктів,масивів, функцій, подій, обробників подій у сценаріях на мові
+                  JavaScript
                 </li>
                 <li>
                   придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
@@ -98,7 +100,7 @@ export default function Lab4() {
               </ul>
             </p>
             <a
-              style={{ color: 'blue' }}
+              style={{color: 'blue'}}
               target="_blank"
               rel="noreferrer"
               href="https://kind-goldberg-805e93.netlify.app"
@@ -107,7 +109,7 @@ export default function Lab4() {
             </a>
             <br/>
             <a
-              style={{ color: 'blue' }}
+              style={{color: 'blue'}}
               target="_blank"
               rel="noreferrer"
               href="https://github.com/Oleh-Khomenko/frontend-labs"
