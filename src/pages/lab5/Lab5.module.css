@@ -20,6 +20,15 @@
   padding: 1rem;
 }
 
+.exchange_rates_informer {
+  max-height: 25rem;
+  margin: 2rem;
+  padding: 0.5rem;
+  background: white;
+  color: black;
+  overflow-y: scroll;
+}
+
 @media (max-width: 54rem) {
   .content_wrapper {
     grid-template-columns: 1fr;

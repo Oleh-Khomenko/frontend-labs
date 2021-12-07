@@ -1,27 +1,69 @@
+import { useEffect, useState } from "react";
 import { Route, Switch } from 'react-router-dom';
-import { useState } from 'react';
+
 import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
+  IconButton,
+  Slider,
   TextField,
   Typography,
-  Slider,
 } from "@mui/material";
 
 // components
 import Aside from '../../components/Aside/Aside';
 import Main from '../../components/Main/Main';
 import StyledNav from '../../components/StyledNav/StyledNav';
+import VideoGallery from "../../components/VideoGallery/VideoGallery";
+import WeatherWidget from "../../components/WeatherWidget/WeatherWidget";
 
 // assets
 import TelegramIcon from '@mui/icons-material/Telegram';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import PinterestIcon from '@mui/icons-material/Pinterest';
 
 // styles
 import styles from './Lab5.module.css';
-import VideoGallery from "../../components/VideoGallery/VideoGallery";
+import Clock from "../../components/Clock/Clock";
+
+// constants
+const EXCHANGE_URL = 'https://openexchangerates.org/api/latest.json?app_id=e005311115aa4755b0cd82dde7bf34ef';
 
 export default function Lab5() {
+  const [exchangeData, setExchangeData] = useState({});
+
+  useEffect(() => {
+    requestExchangeData().then(res => setExchangeData(res));
+  }, []);
+
+  function wrapRates() {
+    const ratesObj = exchangeData?.rates;
+    if (ratesObj) {
+      const rates = [];
+      for (const ratesKey in ratesObj) {
+        rates.unshift(
+          <p key={ratesKey}>
+            {ratesKey}:&nbsp;
+            <span style={{ color: 'darkred' }}>{ratesObj[ratesKey]}</span>
+          </p>);
+      }
+      return rates;
+    }
+    return null;
+  }
+
+  async function requestExchangeData() {
+    let response = await fetch(EXCHANGE_URL);
+
+    if (response.ok) {
+      return await response.json();
+    } else {
+      alert("Ошибка HTTP: " + response.status);
+    }
+  }
+
   return (
     <div className={styles.content_wrapper}>
       <Aside className={styles.aside}>
@@ -119,9 +161,51 @@ export default function Lab5() {
             <VideoGallery/>
           </Route>
           <Route path="/lab5/4">
+            <IconButton
+              href="https://web.telegram.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <TelegramIcon/>
+            </IconButton>
 
+            <IconButton
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <InstagramIcon/>
+            </IconButton>
+
+            <IconButton
+              href="https://uk-ua.facebook.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FacebookIcon/>
+            </IconButton>
+
+            <IconButton
+              href="https://www.pinterest.ru/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <PinterestIcon/>
+            </IconButton>
           </Route>
           <Route path="/lab5/5">
+            <WeatherWidget/>
+            <div className={styles.exchange_rates_informer}>
+              <p style={{ color: 'red' }}>Base: 1 USD</p>
+              <p>
+                Date:&nbsp;
+                <span style={{ color: 'red' }}>
+                  {new Date(exchangeData.timestamp * 1000).toLocaleDateString()}
+                </span>
+              </p>
+              {wrapRates()}
+            </div>
+            <Clock/>
           </Route>
         </Switch>
       </Main>
