@@ -68,6 +68,7 @@
 
 .aside > *:not(:last-child) {
   margin-bottom: 1rem;
+  padding-right: 1rem;
 }
 
 @media (max-width: 54rem) {

@@ -12,6 +12,10 @@ import POM_HTML from '../../assets/lab3/pomorova_html.png';
 import KHO_HTML from '../../assets/lab3/khomenko_html.png';
 import POM_CSS from '../../assets/lab3/pomorova_css.png';
 import KHO_CSS from '../../assets/lab3/khomenko_css.png';
+import TEMP from '../../assets/lab3/template.png';
+import HTML from '../../assets/lab3/html.png';
+import GRID from '../../assets/lab3/grid.png';
+import FLEX from '../../assets/lab3/flex.png';
 
 // styles
 import styles from './Lab3.module.css';
@@ -33,12 +37,12 @@ export default function Lab3() {
           HTML-код макету
         </StyledNav>
         <StyledNav to={'/lab3/4'}>
-          Розмітка сторінки за допомогою таблиці
+          Розмітка сторінки за допомогою grid
         </StyledNav>
         <StyledNav to={'/lab3/5'}>
-          Розмітка сторінки за допомогою плаваючих блоків
+          Розмітка сторінки за допомогою flexbox
         </StyledNav>
-        
+
         <StyledNav to={'/lab3/6'} className={styles.list}>
           HTML-код сторінки завдання
           <StyledNav to={'/lab3/6/1'}>
@@ -48,7 +52,7 @@ export default function Lab3() {
             Хоменко
           </StyledNav>
         </StyledNav>
-  
+
         <StyledNav to={'/lab3/7'} className={styles.list}>
           CSS-код сторінки завдання
           <StyledNav to={'/lab3/7/1'}>
@@ -58,12 +62,12 @@ export default function Lab3() {
             Хоменко
           </StyledNav>
         </StyledNav>
-  
+
         <StyledNav to={'/lab3/8'}>
           Висновки
         </StyledNav>
       </Aside>
-      
+
       {/* Routes */}
       <Main>
         <Switch>
@@ -71,24 +75,22 @@ export default function Lab3() {
             <Template3/>
           </Route>
           <Route path="/lab3/1">
-            <p>
-              Тема: БЛОЧНА ВЕРСТКА HTML-ДОКУМЕНТУ ЗА МАКЕТОМ. ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
-              <br/>
-              <br/>
-              Мета:
-              <ul>
-                <li>
-                  придбати практичні навички роботи верстки сторінок засобами CSS, верстки на основі плаваючих
-                  елементів,
-                  з’ясувати переваги та недоліки типів макетів веб-сторінок
-                </li>
-                <li>
-                  придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
-                </li>
-              </ul>
-            </p>
+            Тема: БЛОЧНА ВЕРСТКА HTML-ДОКУМЕНТУ ЗА МАКЕТОМ. ВЕРСТКА ЗАСОБАМИ CSS та FLEXBOX.
+            <br/>
+            <br/>
+            Мета:
+            <ul>
+              <li>
+                придбати практичні навички роботи верстки сторінок засобами CSS, верстки на основі плаваючих
+                елементів,
+                з’ясувати переваги та недоліки типів макетів веб-сторінок
+              </li>
+              <li>
+                придбати практичні навички роботи верстки сторінок засобами CSS та FLEXBOX
+              </li>
+            </ul>
             <a
-              style={{ color: 'blue' }}
+              style={{color: 'blue'}}
               target="_blank"
               rel="noreferrer"
               href="https://kind-goldberg-805e93.netlify.app"
@@ -97,7 +99,7 @@ export default function Lab3() {
             </a>
             <br/>
             <a
-              style={{ color: 'blue' }}
+              style={{color: 'blue'}}
               target="_blank"
               rel="noreferrer"
               href="https://github.com/Oleh-Khomenko/frontend-labs"
@@ -105,19 +107,23 @@ export default function Lab3() {
               https://github.com/Oleh-Khomenko/frontend-labs
             </a>
           </Route>
-          
+
           <Route path="/lab3/2">
+            <img src={TEMP} alt="template"/>
           </Route>
-          
+
           <Route path="/lab3/3">
+            <img src={HTML} alt="html"/>
           </Route>
-          
+
           <Route path="/lab3/4">
+            <img src={GRID} alt="grid"/>
           </Route>
-          
+
           <Route path="/lab3/5">
+            <img src={FLEX} alt="flex"/>
           </Route>
-          
+
           <Route path={['/lab3/6', '/lab3/6/1', '/lab3/6/2']}>
             <Route path={['/lab3/6', '/lab3/6/1']} exact>
               <img src={POM_HTML} alt="pomorova html"/>
@@ -126,7 +132,7 @@ export default function Lab3() {
               <img src={KHO_HTML} alt="khomenko html"/>
             </Route>
           </Route>
-  
+
           <Route path={['/lab3/7', '/lab3/7/1', '/lab3/7/2']}>
             <Route path={['/lab3/7', '/lab3/7/1']} exact>
               <img src={POM_CSS} alt="pomorova css"/>
@@ -135,7 +141,7 @@ export default function Lab3() {
               <img src={KHO_CSS} alt="khomenko css"/>
             </Route>
           </Route>
-          
+
           <Route path="/lab3/8">
             <ul>
               <li>

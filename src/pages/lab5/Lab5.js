@@ -27,6 +27,7 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 // styles
 import styles from './Lab5.module.css';
 import Clock from "../../components/Clock/Clock";
+import Lab6Api from "../../api/lab6.api";
 
 // constants
 const EXCHANGE_URL = 'https://openexchangerates.org/api/latest.json?app_id=e005311115aa4755b0cd82dde7bf34ef';
@@ -46,7 +47,7 @@ export default function Lab5() {
         rates.unshift(
           <p key={ratesKey}>
             {ratesKey}:&nbsp;
-            <span style={{ color: 'darkred' }}>{ratesObj[ratesKey]}</span>
+            <span style={{color: 'darkred'}}>{ratesObj[ratesKey]}</span>
           </p>);
       }
       return rates;
@@ -193,19 +194,30 @@ export default function Lab5() {
               <PinterestIcon/>
             </IconButton>
           </Route>
+
           <Route path="/lab5/5">
             <WeatherWidget/>
+            <iframe width="300" height="120" frameBorder="0" title="Exchange"
+                    src="https://informer.minfin.com.ua/gen/course/?color=yellow"
+                    vspace="0" scrolling="no" hspace="0" allowTransparency="true"
+                    style={{width: 300, height: 120, marginTop: 16, overflow: 'hidden'}}>
+            </iframe>
             <div className={styles.exchange_rates_informer}>
-              <p style={{ color: 'red' }}>Base: 1 USD</p>
+              <p style={{color: 'red'}}>Base: 1 USD</p>
               <p>
                 Date:&nbsp;
-                <span style={{ color: 'red' }}>
-                  {new Date(exchangeData.timestamp * 1000).toLocaleDateString()}
+                <span style={{color: 'red'}}>
+                  {new Date(exchangeData.timestamp * 1000).toDateString()}
                 </span>
               </p>
               {wrapRates()}
             </div>
             <Clock/>
+          </Route>
+
+          <Route path="/lab5/6">
+            Придбати практичні навички роботи material UI, вміти додавати до сайту динамічні елементи цієї бібіліотеки,
+            плагін галереї, кнопки соціальних мереж, інформери та інше.
           </Route>
         </Switch>
       </Main>

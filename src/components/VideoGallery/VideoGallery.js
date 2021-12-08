@@ -31,7 +31,7 @@ export default function VideoGallery() {
         <img
           width="300"
           height="100"
-          class="img-responsive"
+          className="img-responsive"
           src="https://img.youtube.com/vi/egyIeygdS_E/maxresdefault.jpg"
         />
       </a>
@@ -39,14 +39,14 @@ export default function VideoGallery() {
       <img
         width="300"
         height="100"
-        class="img-responsive"
+        className="img-responsive"
         src={imageList[0]}
       />
 
       <img
         width="300"
         height="100"
-        class="img-responsive"
+        className="img-responsive"
         src={imageList[1]}
       />
 
@@ -54,7 +54,7 @@ export default function VideoGallery() {
       <img
         width="300"
         height="100"
-        class="img-responsive"
+        className="img-responsive"
         src={imageList[2]}
       />
     </div>

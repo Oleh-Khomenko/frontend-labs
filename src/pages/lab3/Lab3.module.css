@@ -49,8 +49,18 @@
   background: black;
 }
 
+.aside {
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.aside::-webkit-scrollbar {
+  width: 0;
+}
+
 .aside > *:not(:last-child) {
   margin-bottom: 1rem;
+  padding-right: 1rem;
 }
 
 .colored_text {
