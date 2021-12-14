@@ -8,14 +8,18 @@ import StyledNav from '../../components/StyledNav/StyledNav';
 import Template3 from './problem3/Template3';
 
 // assets
-import POM_HTML from '../../assets/lab3/pomorova_html.png';
-import KHO_HTML from '../../assets/lab3/khomenko_html.png';
-import POM_CSS from '../../assets/lab3/pomorova_css.png';
-import KHO_CSS from '../../assets/lab3/khomenko_css.png';
-import TEMP from '../../assets/lab3/template.png';
-import HTML from '../../assets/lab3/html.png';
-import GRID from '../../assets/lab3/grid.png';
-import FLEX from '../../assets/lab3/flex.png';
+import TEMPLATE from '../../assets/lab3/template.png'
+import TEMPLATE_HTML from '../../assets/lab3/template-html.png'
+import TEMPLATE_CSS from '../../assets/lab3/template-css.png'
+import TASK2 from '../../assets/lab3/problem-2.png'
+import FLOAT_HTML from '../../assets/lab3/float-html.png'
+import FLOAT_CSS from '../../assets/lab3/float-css.png'
+import TABLE_HTML from '../../assets/lab3/table-html.png'
+import TABLE_CSS from '../../assets/lab3/table-css.png'
+import POMOROVA_HTML from '../../assets/lab3/pomorova-html.png'
+import POMOROVA_CSS from '../../assets/lab3/pomorova-css.png'
+import KHOMENKO_HTML from '../../assets/lab3/khomenko-html.png'
+import KHOMENKO_CSS from '../../assets/lab3/khomenko-css.png'
 
 // styles
 import styles from './Lab3.module.css';
@@ -34,13 +38,13 @@ export default function Lab3() {
           Зовнішній вигляд макету
         </StyledNav>
         <StyledNav to={'/lab3/3'}>
-          HTML-код макету
+          HTML-CSS-код макету
         </StyledNav>
         <StyledNav to={'/lab3/4'}>
-          Розмітка сторінки за допомогою grid
+          Завдання 2
         </StyledNav>
         <StyledNav to={'/lab3/5'}>
-          Розмітка сторінки за допомогою flexbox
+          Розмітка сторінки за допомогою float, table
         </StyledNav>
 
         <StyledNav to={'/lab3/6'} className={styles.list}>
@@ -109,36 +113,42 @@ export default function Lab3() {
           </Route>
 
           <Route path="/lab3/2">
-            <img src={TEMP} alt="template"/>
+            <img src={TEMPLATE} alt="template"/>
           </Route>
 
           <Route path="/lab3/3">
-            <img src={HTML} alt="html"/>
+            <img src={TEMPLATE_HTML} alt="html"/>
+            <img src={TEMPLATE_CSS} alt="css"/>
           </Route>
 
           <Route path="/lab3/4">
-            <img src={GRID} alt="grid"/>
+            <img src={TASK2} alt="task2" />
           </Route>
 
           <Route path="/lab3/5">
-            <img src={FLEX} alt="flex"/>
+            <h2>float</h2>
+            <img src={FLOAT_HTML} alt="float html" />
+            <img src={FLOAT_CSS} alt="float css" />
+            <h2>table</h2>
+            <img src={TABLE_HTML} alt="table html" />
+            <img src={TABLE_CSS} alt="table css" />
           </Route>
 
           <Route path={['/lab3/6', '/lab3/6/1', '/lab3/6/2']}>
             <Route path={['/lab3/6', '/lab3/6/1']} exact>
-              <img src={POM_HTML} alt="pomorova html"/>
+              <img src={POMOROVA_HTML} alt="html" />
             </Route>
             <Route path={['/lab3/6', '/lab3/6/2']} exact>
-              <img src={KHO_HTML} alt="khomenko html"/>
+              <img src={KHOMENKO_HTML} alt="html" />
             </Route>
           </Route>
 
           <Route path={['/lab3/7', '/lab3/7/1', '/lab3/7/2']}>
             <Route path={['/lab3/7', '/lab3/7/1']} exact>
-              <img src={POM_CSS} alt="pomorova css"/>
+              <img src={POMOROVA_CSS} alt="css" />
             </Route>
             <Route path={['/lab3/7', '/lab3/7/2']} exact>
-              <img src={KHO_CSS} alt="khomenko css"/>
+              <img src={KHOMENKO_CSS} alt="css" />
             </Route>
           </Route>
 

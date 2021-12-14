@@ -1,0 +1,24 @@
+.table {
+  table-layout: fixed;
+  width: 100%;
+  color: black;
+  border-collapse: collapse;
+}
+
+.table > * {
+  text-align: center;
+}
+
+.header {
+  height: 100px;
+  background: darkgoldenrod;
+}
+
+.main > td {
+  height: 50vh;
+}
+
+.footer > td {
+  height: 200px;
+  background: darkgoldenrod;
+}

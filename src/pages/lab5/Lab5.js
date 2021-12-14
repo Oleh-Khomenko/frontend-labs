@@ -27,7 +27,6 @@ import PinterestIcon from '@mui/icons-material/Pinterest';
 // styles
 import styles from './Lab5.module.css';
 import Clock from "../../components/Clock/Clock";
-import Lab6Api from "../../api/lab6.api";
 
 // constants
 const EXCHANGE_URL = 'https://openexchangerates.org/api/latest.json?app_id=e005311115aa4755b0cd82dde7bf34ef';

@@ -23,21 +23,28 @@ export default function Header() {
           to="/lab1"
           className={styles.tab}
         >
-          Лабораторна робота №1
+          <p>Лабораторна робота №1</p>
+          <StyledNav className={styles.nav} to="/pages/lab1">page</StyledNav>
         </StyledNav>
 
         <StyledNav
           to="/lab2"
           className={styles.tab}
         >
-          Лабораторна робота №2
+          <p>Лабораторна робота №2</p>
+          <StyledNav className={styles.nav} to="/pages/lab2">page</StyledNav>
         </StyledNav>
 
         <StyledNav
           to="/lab3"
           className={styles.tab}
         >
-          Лабораторна робота №3
+          <p>Лабораторна робота №3</p>
+          <StyledNav className={styles.nav} to="/pages/lab3/0">float</StyledNav>
+          <StyledNav className={styles.nav} to="/pages/lab3/1">table</StyledNav>
+          <StyledNav className={styles.nav} to="/pages/lab3/11">template</StyledNav>
+          <StyledNav className={styles.nav} to="/pages/lab3/2">template P</StyledNav>
+          <StyledNav className={styles.nav} to="/pages/lab3/3">template Kh</StyledNav>
         </StyledNav>
 
         <StyledNav

@@ -19,22 +19,47 @@ export default function Template3() {
           <p>react</p>
         </div>
         <div>
+          <img src="" alt="redux"/>
+          <p>react</p>
+        </div>
+        <div>
           <img src="" alt="angular"/>
           <p>angular</p>
+        </div>
+        <div>
+          <img src="" alt="angular"/>
+          <p>typescript</p>
+        </div>
+        <div>
+          <img src="" alt="angular"/>
+          <p>github</p>
+        </div>
+        <div>
+          <img src="" alt="angular"/>
+          <p>gitlab</p>
         </div>
       </div>
       <div className={styles.content_block}>
         <h2>
           МИ ГАРАНТУЄМО НАШИМ ПРАЦІВНИКАМ ПРАЦЕВЛАШТУВАННЯ
         </h2>
+        <div className={styles.card_wrapper}>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div className={styles.content_block}>
         <h2>
           JAVA З ПРАЦЕВЛАШТУВАННЯМ
         </h2>
+        <div className={styles.card_wrapper}>
+          <div></div>
+          <div></div>
+        </div>
       </div>
       <div className={styles.footer}>
-        <div></div>
+        <div/>
         <div>
           <img src="" alt="facebook"/>
           <img src="" alt="VK"/>

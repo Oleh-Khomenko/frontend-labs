@@ -3,10 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-height: 100vh;
 }
 
 .template_wrapper > * {
   width: 100%;
+  max-width: 1200px;
   text-align: center;
 }
 
@@ -36,6 +38,10 @@
   height: 300px;
   color: black;
   background-color: white;
+}
+
+.card_wrapper {
+  display: flex;
 }
 
 .footer {

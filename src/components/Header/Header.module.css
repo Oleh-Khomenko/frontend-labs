@@ -47,3 +47,12 @@
     max-width: 150px;
     text-align: center;
 }
+
+.nav {
+    margin-top: 0.5rem;
+    background: #3a2924!important;
+}
+
+.nav:hover {
+    background: black!important;
+}

@@ -2,11 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
   justify-content: center;
-  box-sizing: border-box;
-
-  background: #4b3e3a;
 }
 
 .content_wrapper {
